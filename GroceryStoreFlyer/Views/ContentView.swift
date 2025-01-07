@@ -19,6 +19,11 @@ struct ItemView: View {
                 Image(providedItem.image)
                 ZStack{
                     Circle()
+                        .fill(Color.yellow)
+                    VStack{
+                        Text("\(providedItem.price.formatted(.currency(code:"CAD")))")
+                            .fontWeight(.bold).font(.title3)
+                    }
                 }
             }
         }
