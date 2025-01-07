@@ -17,6 +17,8 @@ struct ItemView: View {
                 .fontWeight(.bold).font(.largeTitle)
             HStack{
                 Image(providedItem.image)
+                    .resizable()
+                    .scaledToFit()
                 ZStack{
                     Circle()
                         .fill(Color.yellow)

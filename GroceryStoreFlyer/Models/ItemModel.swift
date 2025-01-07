@@ -18,5 +18,7 @@ struct FoodItem: Identifiable {
 }
 
 let cucumbers: FoodItem = FoodItem(price: 3.50, name: "Cucumbers", image: "Cucumbers", mass: 903)
-let apples: FoodItem = FoodItem(price: 4.97, name: "Apples", image: "apples", mass: 1814)
+let apples: FoodItem = FoodItem(price: 4.97, name: "Apples", image: "Apples", mass: 1814)
 let potatoes: FoodItem = FoodItem(price: 5.97, name: "Yellow Pugly Potatoes", image: "potatoes", mass: 2268)
+
+let foodItems: [FoodItem] = [cucumbers, apples, potatoes]

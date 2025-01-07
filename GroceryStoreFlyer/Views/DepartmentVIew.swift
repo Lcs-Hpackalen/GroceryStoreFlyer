@@ -12,11 +12,12 @@ struct DepartmentVIew: View {
     let providedDepartment: Department
     //Mark: Computed properties
     var body: some View {
-        VStack{
-            ZStack{
-                Text(providedDepartment.name)
+        NavigationStack{
+            List(foodItems){ providedItem in ItemView (providedItem: providedItem)
             }
+            .navigationTitle(providedDepartment.name)
         }
+        
     }
 }
 
