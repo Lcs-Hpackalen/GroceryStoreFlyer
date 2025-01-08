@@ -10,8 +10,10 @@ import SwiftUI
 struct Department: Identifiable {
     let id = UUID()
     let name: String
-    let items: [FoodItem]
     let image: String
+    let foodItems: [FoodItem]
 }
-let produce = Department(name: "Produce", items: [cucumbers, potatoes,apples ], image: "Produce")
-    
+let produce = Department(name: "Produce", image: "Produce", foodItems: produceItems)
+let dairy = Department(name: "Dairy", image: "dairy", foodItems: dairyItems)
+
+let departmentList: [Department] = [produce, dairy]

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F48535522D2ECFF0006A9537 /* DepartmentsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48535512D2ECFF0006A9537 /* DepartmentsListView.swift */; };
 		F48F29292D2D8B00000B6C77 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48F29262D2D8B00000B6C77 /* ContentView.swift */; };
 		F48F292A2D2D8B00000B6C77 /* GroceryStoreFlyerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48F29272D2D8B00000B6C77 /* GroceryStoreFlyerApp.swift */; };
 		F48F292B2D2D8B00000B6C77 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F48F29232D2D8B00000B6C77 /* Preview Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F48535512D2ECFF0006A9537 /* DepartmentsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentsListView.swift; sourceTree = "<group>"; };
 		F48F29122D2D8AF5000B6C77 /* GroceryStoreFlyer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroceryStoreFlyer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F48F29232D2D8B00000B6C77 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F48F29252D2D8B00000B6C77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			children = (
 				F48F29262D2D8B00000B6C77 /* ContentView.swift */,
 				F48F29352D2D95BC000B6C77 /* DepartmentVIew.swift */,
+				F48535512D2ECFF0006A9537 /* DepartmentsListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 				F48F29302D2D8B81000B6C77 /* ItemModel.swift in Sources */,
 				F48F29342D2D94E7000B6C77 /* DepartmentsModel.swift in Sources */,
 				F48F29292D2D8B00000B6C77 /* ContentView.swift in Sources */,
+				F48535522D2ECFF0006A9537 /* DepartmentsListView.swift in Sources */,
 				F48F292A2D2D8B00000B6C77 /* GroceryStoreFlyerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,17 +12,16 @@ struct DepartmentVIew: View {
     let providedDepartment: Department
     //Mark: Computed properties
     var body: some View {
-        NavigationStack{
-            VStack{
-                ZStack{
-                    Text(providedDepartment.name)
-                        .font(.title).fontWeight(.bold)
-                    Image(providedDepartment.image)
-                        .resizable()
-                        .scaledToFit()
-                }
-                List(foodItems){ providedItem in ItemView (providedItem: providedItem)
-                }
+        VStack{
+            ZStack{
+                Text(providedDepartment.name)
+                    .font(.title).fontWeight(.bold)
+                Image(providedDepartment.image)
+                    .resizable()
+                    .scaledToFit()
+            }
+            List(providedDepartment.foodItems){ currentItem in
+                ItemView (providedItem: currentItem)
             }
         }
         
@@ -30,5 +29,7 @@ struct DepartmentVIew: View {
 }
 
 #Preview {
-    DepartmentVIew(providedDepartment: produce)
+    NavigationStack{
+        DepartmentVIew(providedDepartment: produce)
+    }
 }

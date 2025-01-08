@@ -21,4 +21,12 @@ let cucumbers: FoodItem = FoodItem(price: 3.50, name: "Cucumbers", image: "Cucum
 let apples: FoodItem = FoodItem(price: 4.97, name: "Apples", image: "Apples", mass: 1814)
 let potatoes: FoodItem = FoodItem(price: 5.97, name: "Yellow Pugly Potatoes", image: "potatoes", mass: 2268)
 
-let foodItems: [FoodItem] = [cucumbers, apples, potatoes]
+let milk: FoodItem = FoodItem(price: 3.65, name: "Milk", image: "milk", mass: 1000)
+let cheese: FoodItem = FoodItem(price: 7.98, name: "Cheese", image: "cheese", mass: 400)
+
+
+
+
+let produceItems: [FoodItem] = [cucumbers, apples, potatoes]
+
+let dairyItems: [FoodItem] = [milk,cheese]
