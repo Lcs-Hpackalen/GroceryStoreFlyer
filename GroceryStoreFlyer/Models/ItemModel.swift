@@ -14,7 +14,7 @@ struct FoodItem: Identifiable {
     let name: String
     let image: String
     let mass: Double
-    var unitPrice: String { "\(price/mass*100)$/100g"}
+    var unitPrice: Double { (price/mass*100) }
 }
 
 let cucumbers: FoodItem = FoodItem(price: 3.50, name: "Cucumbers", image: "Cucumbers", mass: 903)

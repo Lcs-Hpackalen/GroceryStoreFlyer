@@ -13,9 +13,17 @@ struct DepartmentVIew: View {
     //Mark: Computed properties
     var body: some View {
         NavigationStack{
-            List(foodItems){ providedItem in ItemView (providedItem: providedItem)
+            VStack{
+                ZStack{
+                    Text(providedDepartment.name)
+                        .font(.title).fontWeight(.bold)
+                    Image(providedDepartment.image)
+                        .resizable()
+                        .scaledToFit()
+                }
+                List(foodItems){ providedItem in ItemView (providedItem: providedItem)
+                }
             }
-            .navigationTitle(providedDepartment.name)
         }
         
     }
